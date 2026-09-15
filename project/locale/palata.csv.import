@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c3einjib58lcn"
+
+[deps]
+
+files=["res://locale/palata.ru.translation", "res://locale/palata.en.translation"]
+
+source_file="res://locale/palata.csv"
+dest_files=["res://locale/palata.ru.translation", "res://locale/palata.en.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

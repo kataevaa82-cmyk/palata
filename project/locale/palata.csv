@@ -1,0 +1,693 @@
+"keys","ru","en"
+"
+
+Всего пациентов: %d","
+
+Всего пациентов: %d","
+
+Patients in total: %d"
+"
+8. Дежурный — палата 0","
+8. Дежурный — палата 0","
+8. The nurse on duty — room 0"
+"   |   поручений в очереди: %d","   |   поручений в очереди: %d","   |   orders queued: %d"
+" + вязки для пациента"," + вязки для пациента"," + patient restraints"
+" + швабра"," + швабра"," + mop"
+"%s   %s (нужно %d) — %s","%s   %s (нужно %d) — %s","%s   %s (need %d) — %s"
+"%s взгляд %s","%s взгляд %s","%s gaze of %s"
+"%s — выполните обязательные задачи смены.","%s — выполните обязательные задачи смены.","%s — complete the shift's required tasks."
+"%s — доживите до 06:00.","%s — доживите до 06:00.","%s — live until 06:00."
+"%s — палата %d, кровать %d. Браслет и карточка совпадают.","%s — палата %d, кровать %d. Браслет и карточка совпадают.","%s — room %d, bed %d. Wristband and chart match."
+"00:00. Вы заступаете на ночную смену.
+WASD — движение    Мышь — взгляд    E — действие    F — фонарик    Esc — пауза","00:00. Вы заступаете на ночную смену.
+WASD — движение    Мышь — взгляд    E — действие    F — фонарик    Esc — пауза","00:00. You are starting the night shift.
+WASD — move    Mouse — look    E — act    F — torch    Esc — pause"
+"00:00. Вы заступаете на ночную смену.
+Левый стик — движение    Правая часть экрана — взгляд
+ДЕЙСТВИЕ — взаимодействие    ФОНАРИК — свет","00:00. Вы заступаете на ночную смену.
+Левый стик — движение    Правая часть экрана — взгляд
+ДЕЙСТВИЕ — взаимодействие    ФОНАРИК — свет","00:00. You are starting the night shift.
+Left stick — move    Right side of the screen — look
+ACTION — interact    TORCH — light"
+"Esc — закрыть","Esc — закрыть","Esc — close"
+"[E] %s — палата %d, кровать %d","[E] %s — палата %d, кровать %d","[E] %s — room %d, bed %d"
+"[E] Взять вязки для буйного пациента (медсклад)","[E] Взять вязки для буйного пациента (медсклад)","[E] Take the restraints for the violent patient (supply room)"
+"[E] Взять комплект чистого белья","[E] Взять комплект чистого белья","[E] Take a set of clean linen"
+"[E] Взять пакет физраствора","[E] Взять пакет физраствора","[E] Take a bag of saline"
+"[E] Взять стетоскоп","[E] Взять стетоскоп","[E] Take the stethoscope"
+"[E] Взять термометр","[E] Взять термометр","[E] Take the thermometer"
+"[E] Взять швабру и ведро","[E] Взять швабру и ведро","[E] Take the mop and bucket"
+"[E] Взять: %s","[E] Взять: %s","[E] Take: %s"
+"[E] Взять: Аминазин","[E] Взять: Аминазин","[E] Take: Aminazine"
+"[E] Взять: Кордиамин","[E] Взять: Кордиамин","[E] Take: Cordiamine"
+"[E] Взять: стерильный бинт","[E] Взять: стерильный бинт","[E] Take: sterile bandage"
+"[E] Включить аварийный фонарь","[E] Включить аварийный фонарь","[E] Switch on the emergency lamp"
+"[E] Включить свет","[E] Включить свет","[E] Switch the light on"
+"[E] Вскрыть стерильный бикс","[E] Вскрыть стерильный бикс","[E] Open the sterilisation drum"
+"[E] Вызвать лифт","[E] Вызвать лифт","[E] Call the lift"
+"[E] Выключить свет","[E] Выключить свет","[E] Switch the light off"
+"[E] Вымыть пол","[E] Вымыть пол","[E] Mop the floor"
+"[E] Вытереть разлитую воду","[E] Вытереть разлитую воду","[E] Mop up the spilled water"
+"[E] Закрыть дверь","[E] Закрыть дверь","[E] Close the door"
+"[E] Закрыть форточку","[E] Закрыть форточку","[E] Close the window vent"
+"[E] Заменить пробки","[E] Заменить пробки","[E] Replace the fuses"
+"[E] Заперто","[E] Заперто","[E] Locked"
+"[E] Заполнить журнал дежурства","[E] Заполнить журнал дежурства","[E] Fill in the duty log"
+"[E] Заполнить свидетельство","[E] Заполнить свидетельство","[E] Fill in the certificate"
+"[E] Нажать аварийную кнопку","[E] Нажать аварийную кнопку","[E] Press the emergency button"
+"[E] Нужны вязки из настенного шкафа в медскладе","[E] Нужны вязки из настенного шкафа в медскладе","[E] You need the restraints from the wall cabinet in the supply room"
+"[E] Обработать руки","[E] Обработать руки","[E] Disinfect your hands"
+"[E] Опустить и включить лампу","[E] Опустить и включить лампу","[E] Lower and switch on the lamp"
+"[E] Осмотреть","[E] Осмотреть","[E] Examine"
+"[E] Осмотреть индикатор лифта","[E] Осмотреть индикатор лифта","[E] Examine the lift indicator"
+"[E] Осмотреть медицинскую тележку","[E] Осмотреть медицинскую тележку","[E] Examine the medical trolley"
+"[E] Осмотреть панель сигнализации","[E] Осмотреть панель сигнализации","[E] Examine the alarm panel"
+"[E] Осмотреть полог карантина","[E] Осмотреть полог карантина","[E] Examine the quarantine curtain"
+"[E] Осмотреть следы","[E] Осмотреть следы","[E] Examine the footprints"
+"[E] Осмотреть тапки","[E] Осмотреть тапки","[E] Examine the slippers"
+"[E] Ответить на звонок","[E] Ответить на звонок","[E] Answer the phone"
+"[E] Отдохнуть за компьютером и восстановить рассудок","[E] Отдохнуть за компьютером и восстановить рассудок","[E] Rest at the computer and recover your mind"
+"[E] Откатить каталку к лифту","[E] Откатить каталку к лифту","[E] Wheel the gurney to the lift"
+"[E] Открыть дверь","[E] Открыть дверь","[E] Open the door"
+"[E] Открыть журнал","[E] Открыть журнал","[E] Open the journal"
+"[E] Отпереть дверь без номера","[E] Отпереть дверь без номера","[E] Unlock the door with no number"
+"[E] Пожарный выход","[E] Пожарный выход","[E] Fire exit"
+"[E] Посмотреть на часы","[E] Посмотреть на часы","[E] Look at the clock"
+"[E] Проверить ведро и швабру","[E] Проверить ведро и швабру","[E] Check the bucket and mop"
+"[E] Проверить пломбу пожарного выхода","[E] Проверить пломбу пожарного выхода","[E] Check the seal on the fire exit"
+"[E] Прочитать записку","[E] Прочитать записку","[E] Read the note"
+"[E] Прочитать карточку","[E] Прочитать карточку","[E] Read the chart"
+"[E] Прочитать назначения и список пациентов","[E] Прочитать назначения и список пациентов","[E] Read the orders and the patient list"
+"[E] Сбить огонь в кабельном коробе","[E] Сбить огонь в кабельном коробе","[E] Put out the fire in the cable duct"
+"[E] Сверить таблицу групп","[E] Сверить таблицу групп","[E] Check the blood group table"
+"[E] Связать буйного пациента вязками","[E] Связать буйного пациента вязками","[E] Restrain the violent patient"
+"[E] Сдать грязное бельё","[E] Сдать грязное бельё","[E] Hand in the soiled linen"
+"[E] Стравить воздух из батареи","[E] Стравить воздух из батареи","[E] Bleed the radiator"
+"[E] Телефон","[E] Телефон","[E] Telephone"
+"[E] Убрать стул с прохода","[E] Убрать стул с прохода","[E] Move the chair out of the way"
+"[E] Увести пациента в палату","[E] Увести пациента в палату","[E] Walk the patient back to the room"
+"[ДЕЙСТВИЕ]","[ДЕЙСТВИЕ]","[ACTION]"
+"«Тогда один лишний». Линия оборвалась.","«Тогда один лишний». Линия оборвалась.","""Then one of them is extra."" The line went dead."
+"А вы кто?","А вы кто?","And who are you?"
+"АВАРИЯ В ДУШЕВОЙ","АВАРИЯ В ДУШЕВОЙ","EMERGENCY IN THE SHOWERS"
+"АВАРИЯ: буйный пациент сорвал кран в душевой. Возьмите швабру в служебной.","АВАРИЯ: буйный пациент сорвал кран в душевой. Возьмите швабру в служебной.","EMERGENCY: the violent patient tore the tap off in the showers. Fetch the mop from the service room."
+"Аварийный фонарь горит. Коридор снова видно.","Аварийный фонарь горит. Коридор снова видно.","The emergency lamp is lit. The corridor is visible again."
+"Аминазин","Аминазин","Aminazine"
+"БУЙНЫЙ ПАЦИЕНТ НАПАЛ! Возьмите ВЯЗКИ в открытом настенном шкафу в МЕДСКЛАДЕ.","БУЙНЫЙ ПАЦИЕНТ НАПАЛ! Возьмите ВЯЗКИ в открытом настенном шкафу в МЕДСКЛАДЕ.","THE VIOLENT PATIENT IS ATTACKING! Take the RESTRAINTS from the open wall cabinet in the SUPPLY ROOM."
+"БУЙНЫЙ ПАЦИЕНТ НАПАЛ! Вязки уже у вас — подойдите ближе и нажмите E.","БУЙНЫЙ ПАЦИЕНТ НАПАЛ! Вязки уже у вас — подойдите ближе и нажмите E.","THE VIOLENT PATIENT IS ATTACKING! You already have the restraints — get closer and press E."
+"Батареи холодные. Ключ для стравливания — в служебной.","Батареи холодные. Ключ для стравливания — в служебной.","The radiators are cold. The bleed key is in the service room."
+"Без назначения брать препараты нельзя. Сначала ответьте на звонок.","Без назначения брать препараты нельзя. Сначала ответьте на звонок.","You may not take drugs without an order. Answer the phone first."
+"Бельё заменено. Отнесите грязный комплект в корзину санитарной комнаты.","Бельё заменено. Отнесите грязный комплект в корзину санитарной комнаты.","Linen changed. Take the soiled set to the basket in the utility room."
+"Бестеневая лампа горит над кушеткой. Под ней уже расстелена клеёнка.","Бестеневая лампа горит над кушеткой. Под ней уже расстелена клеёнка.","The surgical lamp burns over the couch. An oilcloth is already spread beneath it."
+"Бикс вскрыт до вас. Инструменты внутри в бурых разводах.","Бикс вскрыт до вас. Инструменты внутри в бурых разводах.","The drum was opened before you. The instruments inside are streaked brown."
+"Бикс вскрыт. Индикаторная лента не изменила цвет — его не кипятили.","Бикс вскрыт. Индикаторная лента не изменила цвет — его не кипятили.","The drum is open. The indicator tape has not changed colour — it was never sterilised."
+"Браслет совпал с карточкой: Климова Т. С., палата 6.","Браслет совпал с карточкой: Климова Т. С., палата 6.","The wristband matches the chart: Klimova T. S., room 6."
+"Буйный пациент догнал вас в коридоре.
+
+Утром тележку нашли опрокинутой, а в журнале дежурств появилась новая строка.","Буйный пациент догнал вас в коридоре.
+
+Утром тележку нашли опрокинутой, а в журнале дежурств появилась новая строка.","The violent patient caught you in the corridor.
+
+In the morning the trolley was found overturned, and a new line had appeared in the duty log."
+"В 04:00 экстренная операция. Прокипятить инструменты,
+вскрыть бикс, поднять лампу и подготовить Савельева.","В 04:00 экстренная операция. Прокипятить инструменты,
+вскрыть бикс, поднять лампу и подготовить Савельева.","Emergency surgery at 04:00. Boil the instruments,
+open the drum, raise the lamp and prep Savelyev."
+"В 05:00 обход главной медсестры. Коридор должен быть чист,
+журнал заполнен, пломбы целы. Она видит всё.","В 05:00 обход главной медсестры. Коридор должен быть чист,
+журнал заполнен, пломбы целы. Она видит всё.","The head nurse does her round at 05:00. The corridor must be clear,
+the log filled in, the seals intact. She sees everything."
+"В МЕНЮ","В МЕНЮ","TO THE MENU"
+"В верхнем ящике пусто. На дне лежит чужой ключ.","В верхнем ящике пусто. На дне лежит чужой ключ.","The top drawer is empty. A key that is not yours lies at the bottom."
+"В журнале чужой почерк. Буквы ваши.","В журнале чужой почерк. Буквы ваши.","The handwriting in the log is not yours. The letters are."
+"В конце коридора кто-то стоит. Вы моргнули — никого.","В конце коридора кто-то стоит. Вы моргнули — никого.","Someone is standing at the end of the corridor. You blink — no one."
+"В коридоре заскрипели колёса синего ведра.","В коридоре заскрипели колёса синего ведра.","The wheels of the blue bucket creak in the corridor."
+"В палате 6 три силуэта. Коек по-прежнему две.","В палате 6 три силуэта. Коек по-прежнему две.","There are three silhouettes in room 6. There are still two beds."
+"В простенке между палатами 3 и 4 стоит дверь. Без номера.","В простенке между палатами 3 и 4 стоит дверь. Без номера.","There is a door in the wall between rooms 3 and 4. With no number."
+"В процедурной работают. Дверь заперта изнутри.","В процедурной работают. Дверь заперта изнутри.","Someone is working in the treatment room. The door is locked from the inside."
+"В трубке слышно дыхание. Затем линия обрывается.","В трубке слышно дыхание. Затем линия обрывается.","There is breathing in the receiver. Then the line cuts out."
+"ВЫ ПОГИБЛИ","ВЫ ПОГИБЛИ","YOU DIED"
+"ВЫЙТИ","ВЫЙТИ","QUIT"
+"Ведро снова неподвижно.","Ведро снова неподвижно.","The bucket is still again."
+"Верните пациента в палату","Верните пациента в палату","Take the patient back to the room"
+"Взято: %s.","Взято: %s.","Taken: %s."
+"Взято: %s. Проверьте фамилию, палату и кровать.","Взято: %s. Проверьте фамилию, палату и кровать.","Taken: %s. Check the name, the room and the bed."
+"Взято: %s. Сверьте назначение — ошибка опасна.","Взято: %s. Сверьте назначение — ошибка опасна.","Taken: %s. Check it against the order — a mistake is dangerous."
+"Взяты вязки из настенного шкафа в медскладе. Подойдите к буйному пациенту и нажмите E.","Взяты вязки из настенного шкафа в медскладе. Подойдите к буйному пациенту и нажмите E.","Restraints taken from the wall cabinet in the supply room. Walk up to the violent patient and press E."
+"Включите аварийный фонарь.","Включите аварийный фонарь.","Switch on the emergency lamp."
+"Вода в синем ведре тихо плеснула.","Вода в синем ведре тихо плеснула.","The water in the blue bucket slapped quietly."
+"Вода убрана. В сливе остался длинный чёрный волос.","Вода убрана. В сливе остался длинный чёрный волос.","The water is cleared. A long black hair is left in the drain."
+"Воздух вышел с шипением. Батарея понемногу теплеет.","Воздух вышел с шипением. Батарея понемногу теплеет.","The air hissed out. The radiator is slowly warming up."
+"Возьмите «%s» в %s.
+Пациент: %s — %s","Возьмите «%s» в %s.
+Пациент: %s — %s","Fetch ""%s"" from %s.
+Patient: %s — %s"
+"Возьмите мазок","Возьмите мазок","Take the swab"
+"Войдите в карантин в маске","Войдите в карантин в маске","Enter quarantine wearing a mask"
+"Восстановите рассудок за компьютером в ОРДИНАТОРСКОЙ.","Восстановите рассудок за компьютером в ОРДИНАТОРСКОЙ.","Recover your mind at the computer in the DOCTORS' ROOM."
+"Врачебная ошибка зарегистрирована. Главная медсестра идёт по коридору. Синий взгляд отнимает рассудок — спрячьтесь в ОРДИНАТОРСКОЙ.","Врачебная ошибка зарегистрирована. Главная медсестра идёт по коридору. Синий взгляд отнимает рассудок — спрячьтесь в ОРДИНАТОРСКОЙ.","A medical error has been logged. The head nurse is coming down the corridor. Her blue gaze takes your mind — hide in the DOCTORS' ROOM."
+"Все обязательные задачи выполнены. Смена завершается.","Все обязательные задачи выполнены. Смена завершается.","All required tasks are complete. The shift is ending."
+"Все задачи выполнены. Доживите до 06:00.","Все задачи выполнены. Доживите до 06:00.","All tasks are done. Live until 06:00."
+"Все семеро лежат с открытыми глазами и смотрят на вас.","Все семеро лежат с открытыми глазами и смотрят на вас.","All seven lie with their eyes open, looking at you."
+"Все форточки распахнуты одновременно.","Все форточки распахнуты одновременно.","Every vent is thrown open at once."
+"Вскройте стерильный бикс.","Вскройте стерильный бикс.","Open the sterilisation drum."
+"Второе одеяло","Второе одеяло","Second blanket"
+"Второе одеяло подоткнуто. Морозов холодный на ощупь.","Второе одеяло подоткнуто. Морозов холодный на ощупь.","The second blanket is tucked in. Morozov is cold to the touch."
+"Вы взяли швабру и ведро из служебной комнаты.","Вы взяли швабру и ведро из служебной комнаты.","You take the mop and bucket from the service room."
+"Вы не устали. Экран компьютера тихо гудит.","Вы не устали. Экран компьютера тихо гудит.","You are not tired. The computer screen hums quietly."
+"Вы перепутали пациента или препарат. Ночная смена закончилась до рассвета.","Вы перепутали пациента или препарат. Ночная смена закончилась до рассвета.","You mixed up a patient or a drug. The night shift ended before dawn."
+"Вы перепутали пациента. На браслете написано: %s.","Вы перепутали пациента. На браслете написано: %s.","You have the wrong patient. The wristband reads: %s."
+"Вы перестали отличать пациентов от тех, кого нет в журнале.
+
+Утром на посту нашли аккуратно заполненную карточку: ваша фамилия, палата 0.","Вы перестали отличать пациентов от тех, кого нет в журнале.
+
+Утром на посту нашли аккуратно заполненную карточку: ваша фамилия, палата 0.","You stopped telling the patients apart from the ones who are not in the journal.
+
+In the morning a neatly filled-in chart was found at the station: your surname, room 0."
+"Вы садитесь за компьютер в ординаторской. Белая пелена понемногу отступает...","Вы садитесь за компьютер в ординаторской. Белая пелена понемногу отступает...","You sit down at the computer in the doctors' room. The white haze slowly draws back..."
+"Вы слишком долго оставались на линии взгляда санитарки.
+
+Нужно было закрыть дверь и спрятаться в помещении.","Вы слишком долго оставались на линии взгляда санитарки.
+
+Нужно было закрыть дверь и спрятаться в помещении.","You stayed in the orderly's line of sight for too long.
+
+You should have shut the door and hidden in a room."
+"Вымойте пол в коридоре.","Вымойте пол в коридоре.","Mop the corridor floor."
+"Выполните назначение с доски дежурств.","Выполните назначение с доски дежурств.","Complete the assignment from the duty board."
+"Выполните назначение по телефону.","Выполните назначение по телефону.","Carry out the order you were given on the phone."
+"Вытерите воду. %s","Вытерите воду. %s","Mop up the water. %s"
+"Генератор заглох. Остался только ваш фонарик.","Генератор заглох. Остался только ваш фонарик.","The generator has died. Only your torch is left."
+"Главная медсестра закончила проверку и уходит.","Главная медсестра закончила проверку и уходит.","The head nurse has finished her inspection and is leaving."
+"Главная медсестра нашла ошибку в назначении.
+
+От её синего взгляда можно было укрыться только в ординаторской.","Главная медсестра нашла ошибку в назначении.
+
+От её синего взгляда можно было укрыться только в ординаторской.","The head nurse found an error in the orders.
+
+There was only one place to hide from her blue gaze: the doctors' room."
+"Главная медсестра ушла. Восстановите рассудок за компьютером в ОРДИНАТОРСКОЙ.","Главная медсестра ушла. Восстановите рассудок за компьютером в ОРДИНАТОРСКОЙ.","The head nurse is gone. Recover your mind at the computer in the DOCTORS' ROOM."
+"Горячий чай","Горячий чай","Hot tea"
+"Грязное бельё","Грязное бельё","Soiled linen"
+"Грязное бельё сдано. Комплект Морозова заменён правильно.","Грязное бельё сдано. Комплект Морозова заменён правильно.","The soiled linen is handed in. Morozov's set was changed correctly."
+"ДВЕРЬ БЕЗ НОМЕРА","ДВЕРЬ БЕЗ НОМЕРА","THE DOOR WITH NO NUMBER"
+"ДЕЙСТВИЕ","ДЕЙСТВИЕ","ACTION"
+"ДОКУМЕНТ ОТДЕЛЕНИЯ","ДОКУМЕНТ ОТДЕЛЕНИЯ","WARD DOCUMENT"
+"ДЫМ","ДЫМ","SMOKE"
+"Дайте горячий чай","Дайте горячий чай","Give the hot tea"
+"Дайте назначенный препарат","Дайте назначенный препарат","Give the prescribed drug"
+"Дежурство окончено. Можете уходить.","Дежурство окончено. Можете уходить.","Your shift is over. You may go."
+"Демина В. Р.","Демина В. Р.","Demina V. R."
+"Демина не переживёт эту ночь. Констатировать, оформить
+свидетельство, упаковать и свезти вниз на лифте.","Демина не переживёт эту ночь. Констатировать, оформить
+свидетельство, упаковать и свезти вниз на лифте.","Demina will not survive this night. Pronounce her, fill in
+the certificate, bag her and take her down in the lift."
+"Демина снова в своей кровати. Одеяло подоткнуто.","Демина снова в своей кровати. Одеяло подоткнуто.","Demina is back in her own bed. The blanket is tucked in."
+"Дождитесь третьего звонка из палаты №4.","Дождитесь третьего звонка из палаты №4.","Wait for the third ring from room 4."
+"Дождитесь финального звонка в 05:53.","Дождитесь финального звонка в 05:53.","Wait for the final call at 05:53."
+"Доживите до 06:00.","Доживите до 06:00.","Live until 06:00."
+"Дым втянуло обратно в решётку. Гарью больше не пахнет.","Дым втянуло обратно в решётку. Гарью больше не пахнет.","The smoke was drawn back into the grate. There is no smell of burning any more."
+"Дым пошёл по потолку коридора.","Дым пошёл по потолку коридора.","Smoke is running along the corridor ceiling."
+"ЕЩЁ ОДНА СМЕНА","ЕЩЁ ОДНА СМЕНА","ANOTHER SHIFT"
+"ЖУРНАЛ ОТДЕЛЕНИЯ
+
+1. Морозов И. П. — палата 1, кровать 1
+2. Левченко А. Н. — палата 2, кровать 1
+3. Орлова Н. Д. — палата 3, кровать 1
+4. Савельев П. М. — палата 4, кровать 1
+5. Демина В. Р. — палата 5, кровать 1
+6. Юдин С. К. — палата 6, кровать 1
+7. Климова Т. С. — палата 6, кровать 2","ЖУРНАЛ ОТДЕЛЕНИЯ
+
+1. Морозов И. П. — палата 1, кровать 1
+2. Левченко А. Н. — палата 2, кровать 1
+3. Орлова Н. Д. — палата 3, кровать 1
+4. Савельев П. М. — палата 4, кровать 1
+5. Демина В. Р. — палата 5, кровать 1
+6. Юдин С. К. — палата 6, кровать 1
+7. Климова Т. С. — палата 6, кровать 2","WARD JOURNAL
+
+1. Morozov I. P. — room 1, bed 1
+2. Levchenko A. N. — room 2, bed 1
+3. Orlova N. D. — room 3, bed 1
+4. Savelyev P. M. — room 4, bed 1
+5. Demina V. R. — room 5, bed 1
+6. Yudin S. K. — room 6, bed 1
+7. Klimova T. S. — room 6, bed 2"
+"Журнал заполнен до 06:00. Почерк ровный, ваш.","Журнал заполнен до 06:00. Почерк ровный, ваш.","The log is filled in up to 06:00. The handwriting is steady, and it is yours."
+"Журнал: палата 0, ваша фамилия, время поступления — сегодня.","Журнал: палата 0, ваша фамилия, время поступления — сегодня.","The journal: room 0, your surname, time of admission — today."
+"ЗАКРЫТЬ","ЗАКРЫТЬ","CLOSE"
+"ЗДОРОВЬЕ","ЗДОРОВЬЕ","HEALTH"
+"За дверью не было палаты.
+Только ещё один коридор и табличка: «ПАЛАТА 0».","За дверью не было палаты.
+Только ещё один коридор и табличка: «ПАЛАТА 0».","There was no ward behind the door.
+Only one more corridor and a sign: ""ROOM 0""."
+"За дверями лифта кто-то ждёт.","За дверями лифта кто-то ждёт.","Someone is waiting behind the lift doors."
+"За пожарной дверью оказался тот же коридор.
+Потом ещё один. Часы всё ещё показывают 05:53.","За пожарной дверью оказался тот же коридор.
+Потом ещё один. Часы всё ещё показывают 05:53.","Behind the fire door was the same corridor.
+Then another one. The clock still reads 05:53."
+"Завершите обязательные задачи смены.","Завершите обязательные задачи смены.","Complete the shift's required tasks."
+"Завершите обязательные задачи; звонок необязателен.","Завершите обязательные задачи; звонок необязателен.","Complete the required tasks; answering the call is optional."
+"Закройте форточку.","Закройте форточку.","Close the window vent."
+"Замените пакет капельницы","Замените пакет капельницы","Replace the IV bag"
+"Замените пробки в щитке западного крыла.","Замените пробки в щитке западного крыла.","Replace the fuses in the west wing panel."
+"Запасные пробки","Запасные пробки","Spare fuses"
+"Заполните журнал дежурства.","Заполните журнал дежурства.","Fill in the duty log."
+"Заполните свидетельство на посту.","Заполните свидетельство на посту.","Fill in the certificate at the station."
+"Из палаты 5 — длинный ровный писк. Демина В. Р.","Из палаты 5 — длинный ровный писк. Демина В. Р.","A long flat tone from room 5. Demina V. R."
+"Из процедурной слышны крики и удары по металлу.","Из процедурной слышны крики и удары по металлу.","Shouting and blows on metal come from the treatment room."
+"Из щитовой тянет гарью. Найти очаг, сбить огонь,
+вскрыть пожарный выход и доложить по телефону.","Из щитовой тянет гарью. Найти очаг, сбить огонь,
+вскрыть пожарный выход и доложить по телефону.","There is a smell of burning from the switch room. Find the source, put out the fire,
+break the seal on the fire exit and report it by phone."
+"Измерьте температуру","Измерьте температуру","Take the temperature"
+"Изо рта идёт пар. В отделении минус.","Изо рта идёт пар. В отделении минус.","Your breath is steaming. It is below freezing in the ward."
+"Инвентарь: %s","Инвентарь: %s","Carrying: %s"
+"Инвентарь: пусто","Инвентарь: пусто","Carrying: nothing"
+"Индикатор лифта загорелся: −1","Индикатор лифта загорелся: −1","The lift indicator lights up: −1"
+"Индикатор лифта не горит. Вы не нажимали кнопку вызова.","Индикатор лифта не горит. Вы не нажимали кнопку вызова.","The lift indicator is dark. You never pressed the call button."
+"КАРАНТИН","КАРАНТИН","QUARANTINE"
+"КАТАЛКА","КАТАЛКА","THE GURNEY"
+"КОМИССИЯ","КОМИССИЯ","THE INSPECTION"
+"КРАСНЫЙ ВЗГЛЯД","КРАСНЫЙ ВЗГЛЯД","THE RED GAZE"
+"Карточка: палата 0, койка 1. Фамилия ваша. Дата поступления — сегодня.","Карточка: палата 0, койка 1. Фамилия ваша. Дата поступления — сегодня.","The chart: room 0, bed 1. The surname is yours. Date of admission — today."
+"Каталка в коридоре. Мешок расстёгнут и пуст.","Каталка в коридоре. Мешок расстёгнут и пуст.","The gurney is in the corridor. The bag is unzipped and empty."
+"Каталка у лифта. Кнопка вызова уже нажата — не вами.","Каталка у лифта. Кнопка вызова уже нажата — не вами.","The gurney is at the lift. The call button is already pressed — not by you."
+"Кислородная подушка","Кислородная подушка","Oxygen pillow"
+"Климова Т. С.","Климова Т. С.","Klimova T. S."
+"Ключ без бирки","Ключ без бирки","Key with no tag"
+"Ключ для батарей","Ключ для батарей","Radiator key"
+"Ключ подошёл. За дверью — тот же коридор, и в его конце снова эта дверь.","Ключ подошёл. За дверью — тот же коридор, и в его конце снова эта дверь.","The key fits. Beyond the door is the same corridor, and at its end this same door again."
+"Кнопка вернулась в исходное положение.","Кнопка вернулась в исходное положение.","The button has come back out."
+"Конец смены.","Конец смены.","End of shift."
+"Констатируйте смерть","Констатируйте смерть","Pronounce the death"
+"Кордиамин","Кордиамин","Cordiamine"
+"Котельная встала, за окном минус пять. Батареи ледяные.
+Стравить воздух, раздать одеяла, закрыть форточки.","Котельная встала, за окном минус пять. Батареи ледяные.
+Стравить воздух, раздать одеяла, закрыть форточки.","The boiler house has stopped and it is minus five outside. The radiators are ice cold.
+Bleed them, hand out blankets, close the vents."
+"Красная кнопка утопилась в стену.","Красная кнопка утопилась в стену.","The red button sinks into the wall."
+"Кровать 1 в палате 1 пуста. Одеяло откинуто.","Кровать 1 в палате 1 пуста. Одеяло откинуто.","Bed 1 in room 1 is empty. The blanket is thrown back."
+"Кровать Морозова пуста, тапки стоят у пожарной двери.
+Найти пациента и вернуть в палату до пересменки.","Кровать Морозова пуста, тапки стоят у пожарной двери.
+Найти пациента и вернуть в палату до пересменки.","Morozov's bed is empty and his slippers stand by the fire door.
+Find the patient and get him back to his room before the handover."
+"Кровь I(0)","Кровь I(0)","Blood I(0)"
+"Кровь II(A)","Кровь II(A)","Blood II(A)"
+"Кровь III(B)","Кровь III(B)","Blood III(B)"
+"Левченко А. Н.","Левченко А. Н.","Levchenko A. N."
+"Левченко выпил чай до дна и попросил закрыть форточку.","Левченко выпил чай до дна и попросил закрыть форточку.","Levchenko drank the tea to the bottom and asked for the vent to be closed."
+"Лекарство передано через полог. Маска не снималась.","Лекарство передано через полог. Маска не снималась.","The medicine went through the curtain. The mask never came off."
+"Лифт поехал сам. Индикатор показывает −1.","Лифт поехал сам. Индикатор показывает −1.","The lift moved on its own. The indicator reads −1."
+"Лифт пришёл пустой. Хирурга нет.","Лифт пришёл пустой. Хирурга нет.","The lift arrived empty. There is no surgeon."
+"Лужа растекается. Нужны швабра и ведро из служебной комнаты.","Лужа растекается. Нужны швабра и ведро из служебной комнаты.","The pool is spreading. You need the mop and bucket from the service room."
+"Мазок взят. Климова не разжала зубы — стекло достали из-под языка.","Мазок взят. Климова не разжала зубы — стекло достали из-под языка.","The swab is taken. Klimova never unclenched her teeth — the glass came out from under her tongue."
+"Марлевая маска","Марлевая маска","Gauze mask"
+"Между палатами 3 и 4 появилась дверь, которой нет на плане.
+В журнале за неё расписана ваша фамилия.","Между палатами 3 и 4 появилась дверь, которой нет на плане.
+В журнале за неё расписана ваша фамилия.","A door that is not on the plan has appeared between rooms 3 and 4.
+In the journal your surname is signed against it."
+"Морозов И. П.","Морозов И. П.","Morozov I. P."
+"Морозов уложен обратно в палату 1. Он ни разу не моргнул.","Морозов уложен обратно в палату 1. Он ни разу не моргнул.","Morozov is back in bed in room 1. He did not blink once."
+"НАЧАТЬ ДЕЖУРСТВО","НАЧАТЬ ДЕЖУРСТВО","BEGIN THE SHIFT"
+"НАЧАТЬ СМЕНУ ЗАНОВО","НАЧАТЬ СМЕНУ ЗАНОВО","RESTART THE SHIFT"
+"НОЧНОЕ ДЕЖУРСТВО","НОЧНОЕ ДЕЖУРСТВО","NIGHT DUTY"
+"НОЧНЫЕ НАЗНАЧЕНИЯ — СВЕРЯТЬ БРАСЛЕТ
+
+Палата 1, кровать 1 — Морозов И. П. — смена белья
+Палата 2, кровать 1 — Левченко А. Н. — температура
+Палата 3, кровать 1 — Орлова Н. Д. — проверить пульс
+Палата 4, кровать 1 — Савельев П. М. — АМИНАЗИН
+Палата 5, кровать 1 — Демина В. Р. — смена повязки
+Палата 6, кровать 1 — Юдин С. К. — физраствор
+Палата 6, кровать 2 — Климова Т. С. — сверка личности
+
+Препараты и инструменты — в ПРОЦЕДУРНОЙ.
+Чистое и грязное бельё — в САНИТАРНОЙ КОМНАТЕ.
+Швабра и ведро — в СЛУЖЕБНОЙ.
+
+Неверный пациент или препарат считается медицинской ошибкой.","НОЧНЫЕ НАЗНАЧЕНИЯ — СВЕРЯТЬ БРАСЛЕТ
+
+Палата 1, кровать 1 — Морозов И. П. — смена белья
+Палата 2, кровать 1 — Левченко А. Н. — температура
+Палата 3, кровать 1 — Орлова Н. Д. — проверить пульс
+Палата 4, кровать 1 — Савельев П. М. — АМИНАЗИН
+Палата 5, кровать 1 — Демина В. Р. — смена повязки
+Палата 6, кровать 1 — Юдин С. К. — физраствор
+Палата 6, кровать 2 — Климова Т. С. — сверка личности
+
+Препараты и инструменты — в ПРОЦЕДУРНОЙ.
+Чистое и грязное бельё — в САНИТАРНОЙ КОМНАТЕ.
+Швабра и ведро — в СЛУЖЕБНОЙ.
+
+Неверный пациент или препарат считается медицинской ошибкой.","NIGHT ORDERS — CHECK THE WRISTBAND
+
+Room 1, bed 1 — Morozov I. P. — change of linen
+Room 2, bed 1 — Levchenko A. N. — temperature
+Room 3, bed 1 — Orlova N. D. — check the pulse
+Room 4, bed 1 — Savelyev P. M. — AMINAZINE
+Room 5, bed 1 — Demina V. R. — change of dressing
+Room 6, bed 1 — Yudin S. K. — saline
+Room 6, bed 2 — Klimova T. S. — identity check
+
+Drugs and instruments — in the TREATMENT ROOM.
+Clean and soiled linen — in the UTILITY ROOM.
+Mop and bucket — in the SERVICE ROOM.
+
+The wrong patient or the wrong drug counts as a medical error."
+"НОЧЬ %d — %s","НОЧЬ %d — %s","NIGHT %d — %s"
+"НОЧЬ %d — %s%s","НОЧЬ %d — %s%s","NIGHT %d — %s%s"
+"На всех пакетах теперь одна группа. Ваша.","На всех пакетах теперь одна группа. Ваша.","Every bag now carries one group. Yours."
+"На лестничной площадке сидит человек в больничном.","На лестничной площадке сидит человек в больничном.","A man in hospital clothes is sitting on the stair landing."
+"На линии слышен ваш собственный голос: «Не отвечай». ","На линии слышен ваш собственный голос: «Не отвечай». ","Your own voice is on the line: ""Do not answer."" "
+"На листке одна строка: «Меня переводят в нулевую».","На листке одна строка: «Меня переводят в нулевую».","One line on the sheet: ""They are moving me to room zero."""
+"Назовите оператору правильное число пациентов.","Назовите оператору правильное число пациентов.","Give the operator the correct number of patients."
+"Не считай тех, кто спит","Не считай тех, кто спит","Do not count the ones who sleep"
+"Новое поручение записано в очередь. Сначала завершите текущее.","Новое поручение записано в очередь. Сначала завершите текущее.","The new order goes in the queue. Finish the current one first."
+"Ночная смена закончилась раньше рассвета.
+В журнале появилась новая строка.","Ночная смена закончилась раньше рассвета.
+В журнале появилась новая строка.","The night shift ended before dawn.
+A new line appeared in the journal."
+"Нужно: %s.","Нужно: %s.","You need: %s."
+"Нужны вязки. Они лежат в открытом настенном шкафу в МЕДСКЛАДЕ.","Нужны вязки. Они лежат в открытом настенном шкафу в МЕДСКЛАДЕ.","You need the restraints. They are in the open wall cabinet in the SUPPLY ROOM."
+"Нужны швабра и ведро из служебной комнаты.","Нужны швабра и ведро из служебной комнаты.","You need the mop and bucket from the service room."
+"ОБЕСТОЧЕНО","ОБЕСТОЧЕНО","BLACKOUT"
+"ОЖИДАНИЕ ПОРУЧЕНИЯ","ОЖИДАНИЕ ПОРУЧЕНИЯ","AWAITING ORDERS"
+"ОПЕРАЦИЯ","ОПЕРАЦИЯ","THE OPERATION"
+"ОШИБКА НАЗНАЧЕНИЯ","ОШИБКА НАЗНАЧЕНИЯ","WRONG ORDER"
+"Обработайте руки после карантина.","Обработайте руки после карантина.","Disinfect your hands after quarantine."
+"Обход в 05:00. Уберите коридор и заполните журнал дежурства.","Обход в 05:00. Уберите коридор и заполните журнал дежурства.","The round is at 05:00. Clear the corridor and fill in the duty log."
+"Обычная ночь. Семь пациентов, журнал, доска назначений.
+Сверяйте браслеты и доживите до 06:00.","Обычная ночь. Семь пациентов, журнал, доска назначений.
+Сверяйте браслеты и доживите до 06:00.","An ordinary night. Seven patients, the journal, the assignment board.
+Check the wristbands and live until 06:00."
+"Огнетушитель","Огнетушитель","Fire extinguisher"
+"Он сидит и смотрит в стену. Без указания оператора трогать его нельзя.","Он сидит и смотрит в стену. Без указания оператора трогать его нельзя.","He sits and stares at the wall. Without an order from the operator you must not touch him."
+"Опасные явления сопровождаются звуком. Не стойте на линии светящихся глаз.","Опасные явления сопровождаются звуком. Не стойте на линии светящихся глаз.","Dangerous things announce themselves with sound. Never stand in the line of glowing eyes."
+"Оператор молча отключился.","Оператор молча отключился.","The operator hung up without a word."
+"Операция в 04:00. Бикс и лампа — в процедурной.","Операция в 04:00. Бикс и лампа — в процедурной.","Surgery at 04:00. The drum and the lamp are in the treatment room."
+"Опустите и включите бестеневую лампу.","Опустите и включите бестеневую лампу.","Lower the surgical lamp and switch it on."
+"Ординаторская: здоровье постепенно восстанавливается.","Ординаторская: здоровье постепенно восстанавливается.","The doctors' room: your health is slowly recovering."
+"Орлова Н. Д.","Орлова Н. Д.","Orlova N. D."
+"Осмотрите индикатор лифта.","Осмотрите индикатор лифта.","Examine the lift indicator."
+"Осмотрите панель сигнализации.","Осмотрите панель сигнализации.","Examine the alarm panel."
+"Осмотрите полог карантина.","Осмотрите полог карантина.","Examine the quarantine curtain."
+"Осмотрите следы в коридоре.","Осмотрите следы в коридоре.","Examine the footprints in the corridor."
+"Осмотрите тапки у пожарной двери.","Осмотрите тапки у пожарной двери.","Examine the slippers by the fire door."
+"Отделение готово","Отделение готово","The ward is ready"
+"Откатите каталку к лифту.","Откатите каталку к лифту.","Wheel the gurney to the lift."
+"Отнесите грязное бельё в корзину санитарной комнаты.","Отнесите грязное бельё в корзину санитарной комнаты.","Take the soiled linen to the basket in the utility room."
+"Отоприте дверь без номера.","Отоприте дверь без номера.","Unlock the door with no number."
+"ПАЛАТА 0","ПАЛАТА 0","ROOM 0"
+"ПАЛАТА 8","ПАЛАТА 8","ROOM 8"
+"ПЕРЕЛИВАНИЕ","ПЕРЕЛИВАНИЕ","TRANSFUSION"
+"ПОБЕГ","ПОБЕГ","THE ESCAPE"
+"ПРОДОЛЖИТЬ","ПРОДОЛЖИТЬ","CONTINUE"
+"ПРОЦЕДУРНОЙ","ПРОЦЕДУРНОЙ","THE TREATMENT ROOM"
+"Палата 6 закрыта плёночным пологом. Вход только в маске,
+на выходе — обработка рук. Мазок у Климовой к утру.","Палата 6 закрыта плёночным пологом. Вход только в маске,
+на выходе — обработка рук. Мазок у Климовой к утру.","Room 6 is sealed behind a plastic curtain. Masks on the way in,
+hands disinfected on the way out. Klimova's swab by morning."
+"Панель показывает западное крыло. Сирену вы отключили.","Панель показывает западное крыло. Сирену вы отключили.","The panel points to the west wing. You have switched the siren off."
+"Пахнет горелой изоляцией. Тянет из щитовой.","Пахнет горелой изоляцией. Тянет из щитовой.","It smells of burnt insulation. It is coming from the switch room."
+"Пациент возвращён в палату 1.","Пациент возвращён в палату 1.","The patient is back in room 1."
+"Пациент принял Аминазин. Дыхание стало ровнее.","Пациент принял Аминазин. Дыхание стало ровнее.","The patient has taken the Aminazine. His breathing evens out."
+"Пациент связан. Он возвращается в палату №4.","Пациент связан. Он возвращается в палату №4.","The patient is restrained. He is going back to room 4."
+"Пациент: %s — %s. Сверьте браслет перед действием.","Пациент: %s — %s. Сверьте браслет перед действием.","Patient: %s — %s. Check the wristband before you act."
+"Пена сбила тление. В коробе оплавленная изоляция и ничего больше.","Пена сбила тление. В коробе оплавленная изоляция и ничего больше.","The foam killed the smouldering. Inside the duct there is melted insulation and nothing else."
+"Пломба пожарного выхода цела. За дверью тихо.","Пломба пожарного выхода цела. За дверью тихо.","The seal on the fire exit is intact. It is quiet behind the door."
+"Плёнка разрезана изнутри, ровно, от пола до замка.","Плёнка разрезана изнутри, ровно, от пола до замка.","The sheeting is cut from the inside, straight, from the floor to the seal."
+"По линолеуму тянутся мокрые следы к пожарной двери.","По линолеуму тянутся мокрые следы к пожарной двери.","Wet footprints run across the linoleum to the fire door."
+"Повязка заменена. На старом бинте нет крови.","Повязка заменена. На старом бинте нет крови.","Dressing changed. There is no blood on the old bandage."
+"Подготовка отделения...","Подготовка отделения...","Preparing the ward..."
+"Подготовьте к операции","Подготовьте к операции","Prepare for surgery"
+"Подключите кислородную подушку","Подключите кислородную подушку","Connect the oxygen pillow"
+"Подключите переливание","Подключите переливание","Start the transfusion"
+"Подстанция села. Отделение на аварийном питании, свет гаснет секциями.
+Компрессор кислорода встал — Юдин дышит сам.","Подстанция села. Отделение на аварийном питании, свет гаснет секциями.
+Компрессор кислорода встал — Юдин дышит сам.","The substation is down. The ward is on emergency power and the lights go out section by section.
+The oxygen compressor has stopped — Yudin is breathing on his own."
+"Подушка подключена. Юдин дышит через маску, глаза открыты.","Подушка подключена. Юдин дышит через маску, глаза открыты.","The pillow is connected. Yudin breathes through the mask, eyes open."
+"Пол вымыт. Разводы сходятся к палате 0.","Пол вымыт. Разводы сходятся к палате 0.","The floor is washed. The streaks converge on room 0."
+"Полог на палате 6 запаян. Маски — в процедурной.","Полог на палате 6 запаян. Маски — в процедурной.","The curtain on room 6 is sealed shut. The masks are in the treatment room."
+"Полог разорван изнутри. Кто-то вышел.","Полог разорван изнутри. Кто-то вышел.","The curtain is torn from the inside. Someone has come out."
+"Получено поручение: %s — %s.","Получено поручение: %s — %s.","New order: %s — %s."
+"Пробирка","Пробирка","Sample tube"
+"Пробирка для мазка","Пробирка для мазка","Swab tube"
+"Пробки заменены. Свет в западном крыле вернулся.","Пробки заменены. Свет в западном крыле вернулся.","Fuses replaced. The lights are back in the west wing."
+"Проверьте доску назначений и отвечайте на телефон.","Проверьте доску назначений и отвечайте на телефон.","Check the assignment board and answer the phone."
+"Проверьте доску назначений на посту и отвечайте на телефон.","Проверьте доску назначений на посту и отвечайте на телефон.","Check the assignment board at the station and answer the phone."
+"Проверьте пломбу пожарного выхода.","Проверьте пломбу пожарного выхода.","Check the seal on the fire exit."
+"Проверьте пульс","Проверьте пульс","Check the pulse"
+"Процедура выполнена.","Процедура выполнена.","The procedure is done."
+"Прочитайте доску назначений на посту.","Прочитайте доску назначений на посту.","Read the assignment board at the station."
+"Прочитайте записку на кровати.","Прочитайте записку на кровати.","Read the note on the bed."
+"Прочитайте карточку палаты 0.","Прочитайте карточку палаты 0.","Read the room 0 chart."
+"Пульс 92. Под кроватью кто-то тихо постучал в ответ.","Пульс 92. Под кроватью кто-то тихо постучал в ответ.","Pulse 92. Under the bed someone tapped back, quietly."
+"РАССУДОК","РАССУДОК","MIND"
+"РАССУДОК УТРАЧЕН","РАССУДОК УТРАЧЕН","MIND LOST"
+"Рассудок полностью восстановлен.","Рассудок полностью восстановлен.","Your mind is fully recovered."
+"Рассудок −%d: %s","Рассудок −%d: %s","Mind −%d: %s"
+"Руки обработаны. Спирт щиплет трещины на костяшках.","Руки обработаны. Спирт щиплет трещины на костяшках.","Hands disinfected. The spirit stings the cracks on your knuckles."
+"САНИТАРНОЙ КОМНАТЕ","САНИТАРНОЙ КОМНАТЕ","THE UTILITY ROOM"
+"СИНИЙ ВЗГЛЯД","СИНИЙ ВЗГЛЯД","THE BLUE GAZE"
+"СМЕНА","СМЕНА","SHIFT"
+"СМЕНА НЕ ОКОНЧЕНА","СМЕНА НЕ ОКОНЧЕНА","SHIFT NOT COMPLETED"
+"СМЕНА ПРИОСТАНОВЛЕНА","СМЕНА ПРИОСТАНОВЛЕНА","SHIFT PAUSED"
+"Савельев П. М.","Савельев П. М.","Savelyev P. M."
+"Савельев П. М. — вторая группа, II(A). Записано в карточке.","Савельев П. М. — вторая группа, II(A). Записано в карточке.","Savelyev P. M. — second group, II(A). Entered in the chart."
+"Савельев подготовлен: побрит, укрыт, вены отмечены.","Савельев подготовлен: побрит, укрыт, вены отмечены.","Savelyev is prepped: shaved, covered, veins marked."
+"Савельеву назначено переливание. Группа II(A).
+Холодильник в процедурной, этикетки сверять дважды.","Савельеву назначено переливание. Группа II(A).
+Холодильник в процедурной, этикетки сверять дважды.","Savelyev is down for a transfusion. Group II(A).
+The fridge is in the treatment room; check the labels twice."
+"Санитарка вернулась. Не попадайтесь под красный взгляд — прячьтесь за дверями.","Санитарка вернулась. Не попадайтесь под красный взгляд — прячьтесь за дверями.","The orderly is back. Stay out of the red gaze — hide behind doors."
+"Сбейте огонь в кабельном коробе.","Сбейте огонь в кабельном коробе.","Put out the fire in the cable duct."
+"Сверьте браслет и карточку","Сверьте браслет и карточку","Check the wristband against the chart"
+"Сверьте журнал пациентов.","Сверьте журнал пациентов.","Check the patient journal."
+"Сверьте таблицу групп крови.","Сверьте таблицу групп крови.","Check the blood group table."
+"Свидетельство заполнено. Графу «причина» вы оставили пустой.","Свидетельство заполнено. Графу «причина» вы оставили пустой.","The certificate is filled in. You left the ""cause"" box empty."
+"Сейчас сдавать нечего.","Сейчас сдавать нечего.","There is nothing to hand in right now."
+"Секундная стрелка дёрнулась, но время не изменилось.","Секундная стрелка дёрнулась, но время не изменилось.","The second hand twitched, but the time did not change."
+"Серое утро заполнило коридор.
+
+Дневная медсестра посмотрела на вас:
+«А вы кто?»
+
+В журнале появилась новая строка.
+Ваша фамилия. Палата 0.","Серое утро заполнило коридор.
+
+Дневная медсестра посмотрела на вас:
+«А вы кто?»
+
+В журнале появилась новая строка.
+Ваша фамилия. Палата 0.","A grey morning filled the corridor.
+
+The day nurse looked at you:
+""And who are you?""
+
+A new line had appeared in the journal.
+Your surname. Room 0."
+"Сирена. Панель мигает: западное крыло.","Сирена. Панель мигает: западное крыло.","The siren. The panel is flashing: west wing."
+"Система подключена, кровь пошла. Савельев перестал дрожать.","Система подключена, кровь пошла. Савельев перестал дрожать.","The line is in, the blood is running. Savelyev has stopped shivering."
+"Сколько пациентов сейчас в отделении?
+
+Выберите ответ","Сколько пациентов сейчас в отделении?
+
+Выберите ответ","How many patients are in the ward right now?
+
+Choose an answer"
+"Сколько пациентов сейчас в отделении?
+
+Нажмите 6, 7 или 8","Сколько пациентов сейчас в отделении?
+
+Нажмите 6, 7 или 8","How many patients are in the ward right now?
+
+Press 6, 7 or 8"
+"Следы босых ног. Ведут к пожарной двери и обратно.","Следы босых ног. Ведут к пожарной двери и обратно.","Bare footprints. They lead to the fire door and back."
+"Смена ещё не закончена.","Смена ещё не закончена.","The shift is not over yet."
+"Смена не принята.
+
+Вы не закрыли журнал дежурства до 06:00.
+В коридоре снова зазвонил телефон.","Смена не принята.
+
+Вы не закрыли журнал дежурства до 06:00.
+В коридоре снова зазвонил телефон.","The shift was not accepted.
+
+You did not close the duty log by 06:00.
+In the corridor the telephone started ringing again."
+"Смените повязку","Смените повязку","Change the dressing"
+"Смените постельное бельё","Смените постельное бельё","Change the bed linen"
+"Сначала возьмите в указанном помещении: %s.","Сначала возьмите в указанном помещении: %s.","First fetch it from the room you were told: %s."
+"Сначала сдайте грязное бельё в санитарной комнате.","Сначала сдайте грязное бельё в санитарной комнате.","Hand the soiled linen in at the utility room first."
+"Старая линия. Гудка нет.","Старая линия. Гудка нет.","An old line. There is no dial tone."
+"Стерильный бинт","Стерильный бинт","Sterile bandage"
+"Стерильный халат","Стерильный халат","Sterile gown"
+"Стетоскоп","Стетоскоп","Stethoscope"
+"Стравите воздух из батареи в палате 3.","Стравите воздух из батареи в палате 3.","Bleed the radiator in room 3."
+"Стул отставлен к стене. Проход свободен.","Стул отставлен к стене. Проход свободен.","The chair is set against the wall. The way is clear."
+"Стул снова стоит поперёк прохода. Вы его убирали.","Стул снова стоит поперёк прохода. Вы его убирали.","The chair is across the passage again. You moved it away."
+"Тапки Морозова. Поставлены ровно, носками к двери.","Тапки Морозова. Поставлены ровно, носками к двери.","Morozov's slippers. Set down neatly, toes towards the door."
+"Тело упаковано. Молния застёгнута до конца — вы проверили дважды.","Тело упаковано. Молния застёгнута до конца — вы проверили дважды.","The body is bagged. The zip is closed all the way — you checked twice."
+"Температура 37,4. Показание внесено в карточку.","Температура 37,4. Показание внесено в карточку.","Temperature 37.4. The reading is entered in the chart."
+"Термометр","Термометр","Thermometer"
+"Тонов нет, зрачки не реагируют. Время смерти 01:20.","Тонов нет, зрачки не реагируют. Время смерти 01:20.","No heart sounds, the pupils do not react. Time of death 01:20."
+"Транспортный мешок","Транспортный мешок","Body bag"
+"Уберите воду в душевой.","Уберите воду в душевой.","Clear the water in the showers."
+"Уберите стул с прохода.","Уберите стул с прохода.","Move the chair out of the way."
+"Удар! Здоровье: %d/%d","Удар! Здоровье: %d/%d","Hit! Health: %d/%d"
+"Уже сделано.","Уже сделано.","Already done."
+"Укройте вторым одеялом","Укройте вторым одеялом","Cover with a second blanket"
+"Упакуйте тело","Упакуйте тело","Bag the body"
+"ФОНАРИК","ФОНАРИК","TORCH"
+"Физраствор","Физраствор","Saline"
+"Физраствор заменён, система снова капает.","Физраствор заменён, система снова капает.","Saline replaced, the drip is running again."
+"Форточка в палате 3 открылась сама. Тянет снегом.","Форточка в палате 3 открылась сама. Тянет снегом.","The vent in room 3 opened by itself. Snow is drifting in."
+"Форточка закрыта на шпингалет. Снег на подоконнике не тает.","Форточка закрыта на шпингалет. Снег на подоконнике не тает.","The vent is latched shut. The snow on the sill is not melting."
+"ХОЛОД","ХОЛОД","THE COLD"
+"Холодильник с кровью в процедурной. Сверьте таблицу групп.","Холодильник с кровью в процедурной. Сверьте таблицу групп.","The blood fridge is in the treatment room. Check the group table."
+"Часы снова идут вперёд.","Часы снова идут вперёд.","The clock is running forward again."
+"Чистое бельё","Чистое бельё","Clean linen"
+"Швабра и ведро находятся в служебной комнате.","Швабра и ведро находятся в служебной комнате.","The mop and bucket are in the service room."
+"Швабра у вас.","Швабра у вас.","You have the mop."
+"Щиток западного крыла щёлкнул. Свет в палатах 1–3 погас.","Щиток западного крыла щёлкнул. Свет в палатах 1–3 погас.","The west wing panel clicked. The lights in rooms 1–3 have gone out."
+"Этикетки на пакетах перепутаны местами.","Этикетки на пакетах перепутаны местами.","The labels on the bags have swapped places."
+"Это не тот препарат или инструмент для %s.","Это не тот препарат или инструмент для %s.","That is the wrong drug or instrument for %s."
+"Юдин С. К.","Юдин С. К.","Yudin S. K."
+"Ящик закрыт.","Ящик закрыт.","The drawer is closed."
+"аномалия","аномалия","an anomaly"
+"аномалия: %s","аномалия: %s","anomaly: %s"
+"буйный пациент","буйный пациент","a violent patient"
+"ваша фамилия в журнале","ваша фамилия в журнале","your surname in the journal"
+"главной медсестры","главной медсестры","the head nurse"
+"движущаяся коляска","движущаяся коляска","the wheelchair that moves"
+"звонок оператора","звонок оператора","a call from the operator"
+"звонок собственным голосом","звонок собственным голосом","a call in your own voice"
+"изменившийся пациент","изменившийся пациент","a patient who changed"
+"изменившийся плакат","изменившийся плакат","the poster that changed"
+"кашель пациента","кашель пациента","a patient coughing"
+"колёса тележки","колёса тележки","trolley wheels"
+"красный","красный","red"
+"лестничная площадка","лестничная площадка","stair landing"
+"лифт на минус первом этаже","лифт на минус первом этаже","the lift on floor minus one"
+"лишнее окно","лишнее окно","an extra window"
+"лишний пациент","лишний пациент","an extra patient"
+"лишний стул","лишний стул","an extra chair"
+"ложная записка","ложная записка","a false note"
+"лучи %s","лучи %s","%s beams"
+"манекен в процедурной","манекен в процедурной","the mannequin in the treatment room"
+"медицинская ошибка","медицинская ошибка","medical error"
+"нажмите E","нажмите E","press E"
+"нажмите ДЕЙСТВИЕ","нажмите ДЕЙСТВИЕ","press ACTION"
+"неверная табличка","неверная табличка","a wrong door sign"
+"неизвестное явление","неизвестное явление","an unknown phenomenon"
+"ненастоящая санитарка","ненастоящая санитарка","the orderly who is not real"
+"неправильная дверь","неправильная дверь","the wrong door"
+"неправильное ведро","неправильное ведро","the wrong bucket"
+"обратный ход часов","обратный ход часов","the clock running backwards"
+"опасность","опасность","danger"
+"ошибка в назначении","ошибка в назначении","wrong order carried out"
+"палата 1, кровать 1","палата 1, кровать 1","room 1, bed 1"
+"палата 2, кровать 1","палата 2, кровать 1","room 2, bed 1"
+"палата 3, кровать 1","палата 3, кровать 1","room 3, bed 1"
+"палата 4, кровать 1","палата 4, кровать 1","room 4, bed 1"
+"палата 5, кровать 1","палата 5, кровать 1","room 5, bed 1"
+"палата 6, кровать 1","палата 6, кровать 1","room 6, bed 1"
+"палата 6, кровать 2","палата 6, кровать 2","room 6, bed 2"
+"палата ноль","палата ноль","room zero"
+"повторяющиеся шаги","повторяющиеся шаги","footsteps repeating yours"
+"пустая кровать","пустая кровать","an empty bed"
+"пусто","пусто","nothing"
+"санитарки","санитарки","the orderly"
+"синий","синий","blue"
+"телевизор в палате №6","телевизор в палате №6","the television in room 6"
+"удлинившийся коридор","удлинившийся коридор","the corridor grown longer"
+"чужое отражение","чужое отражение","a reflection that is not yours"
+"шум воды","шум воды","running water"
+"щелчок реле","щелчок реле","a relay clicking"
+"РУС","РУС","RU"
+"ПОРУЧЕНИЕ","ПОРУЧЕНИЕ","ASSIGNMENT"
+"   |   поручений в очереди: %d | ПОРУЧЕНИЕ — сменить приоритет","   |   поручений в очереди: %d | ПОРУЧЕНИЕ — сменить приоритет","   |   queued assignments: %d | ASSIGNMENT — change priority"
+"Замечено: %s","Замечено: %s","Noticed: %s"
+"необычное изменение","необычное изменение","an unusual change"
+"Главная медсестра начала обход. Синий взгляд отнимает рассудок — спрячьтесь в ОРДИНАТОРСКОЙ.","Главная медсестра начала обход. Синий взгляд отнимает рассудок — спрячьтесь в ОРДИНАТОРСКОЙ.","The head nurse has started her round. Her blue gaze takes your mind — hide in the DOCTORS' ROOM."
+"что-то не так в отделении","что-то не так в отделении","something is wrong on the ward"
+"Морозов И. П. — палата 1, кровать 1","Морозов И. П. — палата 1, кровать 1","Morozov I. P. — room 1, bed 1"
+"Левченко А. Н. — палата 2, кровать 1","Левченко А. Н. — палата 2, кровать 1","Levchenko A. N. — room 2, bed 1"
+"Орлова Н. Д. — палата 3, кровать 1","Орлова Н. Д. — палата 3, кровать 1","Orlova N. D. — room 3, bed 1"
+"Савельев П. М. — палата 4, кровать 1","Савельев П. М. — палата 4, кровать 1","Savelyev P. M. — room 4, bed 1"
+"Демина В. Р. — палата 5, кровать 1","Демина В. Р. — палата 5, кровать 1","Demina V. R. — room 5, bed 1"
+"Юдин С. К. — палата 6, кровать 1","Юдин С. К. — палата 6, кровать 1","Yudin S. K. — room 6, bed 1"
+"Климова Т. С. — палата 6, кровать 2","Климова Т. С. — палата 6, кровать 2","Klimova T. S. — room 6, bed 2"
+"[E] Сдать смену на посту","[E] Сдать смену на посту","[E] Hand over the shift at the station"
+"ЖУРНАЛ ОТДЕЛЕНИЯ","ЖУРНАЛ ОТДЕЛЕНИЯ","WARD JOURNAL"
+"Смена не сдана. Сдайте журнал на посту.","Смена не сдана. Сдайте журнал на посту.","The shift has not been handed over. Hand in the journal at the station."
+"Стул снова отставлен к стене.","Стул снова отставлен к стене.","You set the chair against the wall again."
+"Форточка снова закрыта на шпингалет.","Форточка снова закрыта на шпингалет.","The vent is latched shut again."
+"Сейчас нет другого доступного поручения.","Сейчас нет другого доступного поручения.","There is no other assignment available right now."
+"Приоритет изменён. Текущее поручение: %s.","Приоритет изменён. Текущее поручение: %s.","Priority changed. Current assignment: %s."
+"[E] Списать вскрытый бикс и подтвердить замену","[E] Списать вскрытый бикс и подтвердить замену","[E] Write off the opened drum and confirm the replacement"
+"[E] Вскрыть запечатанный заменённый бикс","[E] Вскрыть запечатанный заменённый бикс","[E] Open the sealed replacement drum"
+"пакет крови — проверьте код партии","пакет крови — проверьте код партии","blood bag — check the batch code"
+"Таблица: Савельев П. М. — II(A), код партии B2-041.","Таблица: Савельев П. М. — II(A), код партии B2-041.","Chart: Savelyev P. M. — II(A), batch code B2-041."
+"Каталка пустая. Сначала упакуйте тело.","Каталка пустая. Сначала упакуйте тело.","The gurney is empty. Pack the body first."
+"Панель молчит. Все зоны в норме.","Панель молчит. Все зоны в норме.","The panel is silent. All zones are normal."
+"Бикс вскрыт до вас. Старый комплект списан — подтвердите замену запечатанным набором.","Бикс вскрыт до вас. Старый комплект списан — подтвердите замену запечатанным набором.","The drum was opened before you. The old kit is written off — confirm the replacement with a sealed set."
+"Бельё уже заменено. Отнесите грязный комплект в корзину санитарной комнаты.","Бельё уже заменено. Отнесите грязный комплект в корзину санитарной комнаты.","The linen is already changed. Take the soiled set to the basket in the utility room."
+"Переливание остановлено: код партии не подтверждён по таблице.","Переливание остановлено: код партии не подтверждён по таблице.","Transfusion stopped: the batch code has not been checked against the chart."
+"Без назначения брать препараты нельзя. Сначала прочитайте доску назначений на посту.","Без назначения брать препараты нельзя. Сначала прочитайте доску назначений на посту.","You cannot take drugs without an order. Read the assignment board at the station first."
+"Этикетки ненадёжны. Сначала сверяйте таблицу групп крови.","Этикетки ненадёжны. Сначала сверяйте таблицу групп крови.","The labels cannot be trusted. Check the blood group chart first."
+"Код партии сверён с таблицей: B2-041. Можно подключать систему.","Код партии сверён с таблицей: B2-041. Можно подключать систему.","Batch code checked against the chart: B2-041. You can connect the line."
+"   |   поручений в очереди: %d | TAB — сменить приоритет","   |   поручений в очереди: %d | TAB — сменить приоритет","   |   queued assignments: %d | TAB — change priority"
+"Рассудок восстановлен до безопасного уровня.","Рассудок восстановлен до безопасного уровня.","Your mind is back to a safe level."
+"НОЧНЫЕ НАЗНАЧЕНИЯ — СВЕРЯТЬ БРАСЛЕТ","НОЧНЫЕ НАЗНАЧЕНИЯ — СВЕРЯТЬ БРАСЛЕТ","NIGHT ORDERS — CHECK THE WRISTBAND"
+"Препараты и инструменты — в ПРОЦЕДУРНОЙ, если в задании не указано другое.","Препараты и инструменты — в ПРОЦЕДУРНОЙ, если в задании не указано другое.","Drugs and instruments are in the TREATMENT ROOM unless the order says otherwise."
+"Чистое и грязное бельё — в САНИТАРНОЙ КОМНАТЕ.","Чистое и грязное бельё — в САНИТАРНОЙ КОМНАТЕ.","Clean and soiled linen — in the UTILITY ROOM."
+"Сверяйте фамилию, палату, кровать и предмет перед применением.","Сверяйте фамилию, палату, кровать и предмет перед применением.","Check the surname, room, bed and item before you use it."
+"Работа завершена. Сдайте смену на посту.","Работа завершена. Сдайте смену на посту.","The work is done. Hand over the shift at the station."
+"Уберите воду в душевой, затем сдайте смену на посту.","Уберите воду в душевой, затем сдайте смену на посту.","Clear the water in the showers, then hand over the shift at the station."
+"Переждите опасность, затем сдайте смену на посту.","Переждите опасность, затем сдайте смену на посту.","Wait out the danger, then hand over the shift at the station."
+"Ответьте на звонок из палаты №4.","Ответьте на звонок из палаты №4.","Answer the call from room 4."
+"В процедурной работают. Дверь приоткрыта, но внутри никого.","В процедурной работают. Дверь приоткрыта, но внутри никого.","Someone is working in the treatment room. The door is ajar, but there is nobody inside."
+"Все обязательные задачи выполнены. Сдайте смену на посту.","Все обязательные задачи выполнены. Сдайте смену на посту.","All required tasks are done. Hand over the shift at the station."
+"Серое утро заполнило коридор. Журнал принят, но под подписью появилась лишняя строка.","Серое утро заполнило коридор. Журнал принят, но под подписью появилась лишняя строка.","A grey morning filled the corridor. The journal was accepted, but an extra line has appeared under the signature."
+"Питание вернулось. Один индикатор всё ещё показывает этаж −1.","Питание вернулось. Один индикатор всё ещё показывает этаж −1.","The power is back. One indicator still shows floor −1."
+"Полог опечатан. След на плёнке остался со стороны пустого коридора.","Полог опечатан. След на плёнке остался со стороны пустого коридора.","The curtain is sealed. The mark on the film is on the side of the empty corridor."
+"Свидетельство подписано. Демина снова числится в палате.","Свидетельство подписано. Демина снова числится в палате.","The certificate is signed. Demina is listed in her room again."
+"Проверенный код партии появился на документе с вашей фамилией.","Проверенный код партии появился на документе с вашей фамилией.","The checked batch code has turned up on a form with your surname."
+"В палате тепло, но один след инея на окне не исчез.","В палате тепло, но один след инея на окне не исчез.","The room is warm, but one trace of frost on the window has not gone."
+"Морозов вернулся в кровать. Мокрые следы продолжаются за дверью.","Морозов вернулся в кровать. Мокрые следы продолжаются за дверью.","Morozov is back in bed. The wet footprints carry on past the door."
+"В акте комиссии уже стоит подпись, которой вы не ставили.","В акте комиссии уже стоит подпись, которой вы не ставили.","The inspection report already bears a signature you never made."
+"Короб сухой. Изнутри всё ещё слышно тихое тление.","Короб сухой. Изнутри всё ещё слышно тихое тление.","The duct is dry. A quiet smouldering can still be heard inside."
+"В журнале операции перечислены действия, которых никто не видел.","В журнале операции перечислены действия, которых никто не видел.","The surgery log lists steps that nobody saw."
+"Карточка палаты 0 подшита к вашему личному делу.","Карточка палаты 0 подшита к вашему личному делу.","The room 0 card has been filed in your personal record."
+"
+
+В журнале отмечена медицинская ошибка; исправление принято дежурным врачом.","
+
+В журнале отмечена медицинская ошибка; исправление принято дежурным врачом.","
+
+A medical error is noted in the journal; the doctor on duty accepted the correction."
+"
+
+Задачи смены: %d/%d. Пациентов осмотрено: %d.","
+
+Задачи смены: %d/%d. Пациентов осмотрено: %d.","
+
+Shift tasks: %d/%d. Patients examined: %d."
+"%s%s
+
+Дневная медсестра посмотрела на вас:
+«А вы кто?»
+
+Ваша фамилия снова появилась в журнале.","%s%s
+
+Дневная медсестра посмотрела на вас:
+«А вы кто?»
+
+Ваша фамилия снова появилась в журнале.","%s%s
+
+The day nurse looked at you:
+""And who are you?""
+
+Your surname has appeared in the journal again."
