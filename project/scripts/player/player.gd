@@ -94,7 +94,15 @@ func _physics_process(delta: float) -> void:
 			if touch_input.length_squared() > input_vec.length_squared():
 				input_vec = touch_input
 		var direction := (transform.basis * Vector3(input_vec.x, 0.0, input_vec.y)).normalized()
-		var target := direction * walk_speed * (1.0 - 0.45 * corridor_stretch)
+		# normalized() throws the length away, so the analogue tilt the touch
+		# stick computes - dead zone, re-normalisation, easing curve, all of
+		# mobile_controls._update_stick() - used to reach this line and die here:
+		# every tilt past the dead zone walked at the full 3.15 m/s, and there
+		# was no careful slow step on a phone at all. Keep the magnitude and
+		# apply it to the speed instead. Input.get_vector() already clamps to 1,
+		# so the keyboard is unchanged.
+		var throttle := minf(input_vec.length(), 1.0)
+		var target := direction * walk_speed * throttle * (1.0 - 0.45 * corridor_stretch)
 		velocity.x = move_toward(velocity.x, target.x, acceleration * delta)
 		velocity.z = move_toward(velocity.z, target.z, acceleration * delta)
 	else:

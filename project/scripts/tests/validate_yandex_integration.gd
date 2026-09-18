@@ -95,6 +95,41 @@ func _run() -> void:
 			failures.append("stick_full_tilt_%f" % controls.movement_vector.x)
 		controls._release_move_touch()
 
+		# ...and the tilt has to survive the trip into the player. Everything
+		# above measures the STICK; this measures the WALK. player.gd normalised
+		# the direction and threw the magnitude away, so half a tilt and a full
+		# tilt both walked at 3.15 m/s and the whole analogue curve above was
+		# decoration. Drive real physics frames and compare the two speeds.
+		var frozen_before: bool = not player.can_move
+		var where_before: Vector3 = player.global_position
+		var facing_before: float = player.rotation.y
+		player.set_frozen(false)
+		var speeds: Array[float] = []
+		for tilt in [0.45, 1.0]:
+			# where_before, not safe_spawn: the player has already settled onto
+			# the floor here, so neither run starts with a drop that the
+			# below-the-world guard would turn into a velocity reset.
+			player.global_position = where_before
+			player.rotation.y = facing_before
+			player.velocity = Vector3.ZERO
+			controls.movement_vector = Vector2(0.0, -tilt)
+			var peak := 0.0
+			# walk_speed / acceleration = 0.225 s to saturate; 24 ticks is 0.4 s
+			# at the 60 Hz physics step, enough for both tilts to settle.
+			for _frame in 24:
+				await physics_frame
+				peak = maxf(peak, Vector2(player.velocity.x, player.velocity.z).length())
+			speeds.append(peak)
+		controls.movement_vector = Vector2.ZERO
+		player.global_position = where_before
+		player.rotation.y = facing_before
+		player.velocity = Vector3.ZERO
+		player.set_frozen(frozen_before)
+		if speeds[1] < player.walk_speed * 0.9:
+			failures.append("full_tilt_does_not_reach_walk_speed_%f" % speeds[1])
+		if speeds[0] > speeds[1] * 0.75:
+			failures.append("stick_tilt_ignored_by_player_%f_vs_%f" % [speeds[0], speeds[1]])
+
 		# Button captions must follow the language in both directions. They used
 		# to bake tr() at build time, which stuck them in whichever language the
 		# scene happened to load in.
