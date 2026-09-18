@@ -12,7 +12,18 @@ window/size/viewport_height=720
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="canvas_items"
-window/handheld/orientation=1
+; Explicit, not inherited: the engine default is also "keep", but this is
+; the setting the whole touch layout depends on - mobile_controls.gd splits
+; the screen and places every button from get_visible_rect(), which "keep"
+; pins to 1280x720 on every device. Changing it to "expand" needs the HUD
+; converted from absolute offsets to anchors first (the crosshair would
+; stop marking where the interaction ray points).
+window/stretch/aspect="keep"
+; 0 = Landscape. This was 1 (Portrait) while every screen in the game is
+; built for 1280x720 and the touch controls are laid out along the long
+; edge. The web export ignores it, so nothing was visibly broken - an
+; Android build would have launched upright.
+window/handheld/orientation=0
 
 [audio]
 general/default_playback_type.web=0

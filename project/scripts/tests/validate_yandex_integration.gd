@@ -133,6 +133,13 @@ func _run() -> void:
 		# Button captions must follow the language in both directions. They used
 		# to bake tr() at build time, which stuck them in whichever language the
 		# scene happened to load in.
+		# Pin the locale first. This block measures a ru -> en -> ru round trip,
+		# but the run starts in whatever the SYSTEM language is: outside the
+		# browser yandex_sdk falls back to OS.get_locale_language(). On an
+		# English machine the "before" sample was already English and both
+		# assertions below fired, so the suite silently depended on being run
+		# on a Russian desktop - it failed on any CI box.
+		TranslationServer.set_locale("ru")
 		var before_ru: String = controls.interact_button.atr(controls.interact_button.text)
 		TranslationServer.set_locale("en")
 		var in_english: String = controls.interact_button.atr(controls.interact_button.text)
@@ -189,6 +196,48 @@ func _run() -> void:
 				failures.append("interact_hint_stayed_lit_on_nothing")
 		else:
 			failures.append("could_not_aim_at_journal")
+
+		# --- touch aim assist ------------------------------------------------
+		# Close up, an interaction volume already fills a wide part of the
+		# screen and the exact ray forgives more than the assist ever would;
+		# the assist earns its place on the far half of the 2.45 m ray, where
+		# the same box shrinks to a few degrees. So this stands BACK from the
+		# puddle - a thin floor slab is the worst case a thumb ever has to aim
+		# at - finds the offset where the exact ray gives up, and checks that
+		# the assist still reaches, and that turning it off gives up too.
+		var spill := _find_named(game.get_node("HospitalModel"), "interaction_water_spill")
+		if not spill:
+			failures.append("no_spill_for_assist_test")
+		elif not await _aim_player_at_range(player, spill):
+			failures.append("could_not_aim_at_spill_from_range")
+		else:
+			var base_aim: Vector3 = player.camera.rotation
+			var gave_up_at := -1.0
+			for degrees in [2.0, 4.0, 6.0, 8.0, 10.0, 12.0]:
+				player.camera.rotation = base_aim
+				player.camera.rotation.x += deg_to_rad(degrees)
+				await process_frame
+				player.ray.force_raycast_update()
+				player.aim_assist_enabled = false
+				player.touch_aim_assist = false
+				if player._find_interactable() != spill:
+					gave_up_at = degrees
+					break
+			if gave_up_at < 0.0:
+				# Not a pass: it means the volume is still wide at this range
+				# and the check below would prove nothing.
+				failures.append("exact_ray_never_missed_the_spill")
+			else:
+				player.aim_assist_enabled = true
+				player.touch_aim_assist = true
+				if player._find_interactable() != spill:
+					failures.append("aim_assist_did_not_recover_%.0f_deg" % gave_up_at)
+				player.aim_assist_enabled = false
+				player.touch_aim_assist = false
+				if player._find_interactable() == spill:
+					failures.append("assist_flag_does_nothing")
+			player.camera.rotation = base_aim
+			player.aim_assist_enabled = true
 
 	# --- interstitials -------------------------------------------------------
 	# Every one of these paths ends with the game waiting on the ad callback to
@@ -290,6 +339,40 @@ func _run() -> void:
 # --- touch event helpers ------------------------------------------------------
 # The controls read raw touch events, so the only honest way to test them is to
 # feed them raw touch events rather than calling the handlers they end up in.
+
+func _find_named(root_node: Node, wanted: String) -> Node3D:
+	if String(root_node.name).to_lower() == wanted:
+		return root_node as Node3D
+	for child in root_node.get_children():
+		var found := _find_named(child, wanted)
+		if found:
+			return found
+	return null
+
+
+func _aim_player_at_range(player: Node, target: Node3D) -> bool:
+	# _aim_player_at() stands as close as it can, which is the opposite of what
+	# the assist test needs. Farthest workable distance first, and never closer
+	# than 2 m, or the exact ray forgives everything and proves nothing.
+	var eye_offset: float = player.camera.global_position.y - player.global_position.y
+	for distance in [2.25, 2.0]:
+		for direction in [Vector3.FORWARD, Vector3.BACK, Vector3.LEFT, Vector3.RIGHT]:
+			var stand: Vector3 = target.global_position + direction * distance
+			player.global_position = Vector3(stand.x, 1.62 - eye_offset, stand.z)
+			player.rotation = Vector3.ZERO
+			player.head.rotation = Vector3.ZERO
+			player.camera.rotation = Vector3.ZERO
+			player.camera.look_at(target.global_position, Vector3.UP)
+			await process_frame
+			player.ray.force_raycast_update()
+			player.aim_assist_enabled = false
+			player.touch_aim_assist = false
+			var found: Node = player._find_interactable()
+			player.aim_assist_enabled = true
+			if found == target:
+				return true
+	return false
+
 
 func _touch(position: Vector2, pressed: bool, index: int) -> InputEventScreenTouch:
 	var event := InputEventScreenTouch.new()

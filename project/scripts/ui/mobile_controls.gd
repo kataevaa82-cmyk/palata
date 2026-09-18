@@ -149,6 +149,13 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch:
 		var touch := event as InputEventScreenTouch
 		if touch.pressed:
+			# `keep` letterboxes the 16:9 canvas on a phone that is not 16:9, and
+			# a touch in the black bars arrives with coordinates outside the
+			# visible rect - negative x on the left side. Taken as a move touch
+			# it plants joystick_origin off-screen, where the stick draws
+			# clipped and can only be pushed one way.
+			if not get_viewport().get_visible_rect().has_point(touch.position):
+				return
 			if _point_on_button(touch.position):
 				return
 			if touch.position.x < get_viewport().get_visible_rect().size.x * 0.48 and move_touch == -1:
@@ -228,6 +235,13 @@ func _refresh_visibility() -> void:
 	assignment_button.visible = show_gameplay
 	var care := get_tree().get_first_node_in_group("care_manager")
 	assignment_button.disabled = not care or care.assignment_queue.is_empty() or care.active_assignment.is_empty() or care.stage == "return"
+	# A disabled Button keeps MOUSE_FILTER_STOP and still swallows the touch,
+	# and _point_on_button() below only looked at `visible`. Most of a shift has
+	# no queue, so a 196x64 rectangle sat in the middle of the look half
+	# absorbing swipes and doing nothing with them. Dim it, let touches through.
+	assignment_button.mouse_filter = (
+		Control.MOUSE_FILTER_IGNORE if assignment_button.disabled else Control.MOUSE_FILTER_STOP)
+	assignment_button.modulate = Color(1.0, 1.0, 1.0, 0.38 if assignment_button.disabled else 1.0)
 	pause_button.visible = mobile_enabled and _shift_has_started() and not _ending_visible()
 	var show_answers := mobile_enabled and _count_question_visible()
 	for button in answer_buttons:
@@ -272,7 +286,7 @@ func _count_question_visible() -> bool:
 
 func _point_on_button(point: Vector2) -> bool:
 	for button in [interact_button, flashlight_button, pause_button, assignment_button]:
-		if button and button.visible and button.get_global_rect().has_point(point):
+		if button and button.visible and not button.disabled and button.get_global_rect().has_point(point):
 			return true
 	for button in answer_buttons:
 		if button.visible and button.get_global_rect().has_point(point):

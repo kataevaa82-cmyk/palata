@@ -9,10 +9,17 @@ signal sanity_changed(value: int)
 @export var gravity := 18.0
 @export var max_health := 100
 @export var max_sanity := 100
+# A thumb cannot place a crosshair the way a mouse can, so on touch devices a
+# miss by the exact ray falls back to the nearest interactable inside a narrow
+# cone. Off by default on desktop: the mouse is precise, and "you must be
+# looking right at it" is part of how the ward reads. Exported so it can be
+# turned off in a test that needs the exact ray.
+@export var aim_assist_enabled := true
 
 @onready var head: Node3D = $Head
 @onready var camera: Camera3D = $Head/Camera3D
 @onready var ray: RayCast3D = $Head/Camera3D/InteractionRay
+@onready var aim_assist: ShapeCast3D = $Head/Camera3D/InteractionAssist
 @onready var flashlight: SpotLight3D = $Head/Camera3D/Flashlight
 @onready var held_item_anchor: Node3D = $Head/Camera3D/HeldItemAnchor
 
@@ -28,6 +35,18 @@ var held_item_copy: Node3D
 # long_corridor anomaly: 0 = normal, 1 = the corridor visibly stretches away.
 var corridor_stretch_target := 0.0
 var corridor_stretch := 0.0
+# Re-derived every physics frame from the touch layer, so plugging in a
+# gamepad or switching device type mid-session is picked up on the next tick.
+var touch_aim_assist := false
+# Ceiling on how far off the crosshair the assist will reach, measured to the
+# swept sphere's contact point rather than to the prop's origin. Because of
+# that the sphere's own 0.25 m radius is what binds at arm's length, and this
+# angle only tightens things up close - which is where it is not needed:
+# measured in-scene, at 1.0-1.5 m an interaction volume already forgives more
+# than 14 deg on the exact ray alone. The assist earns its keep on the far half
+# of the 2.45 m ray, where the same box shrinks to a couple of degrees: on the
+# puddle at 2.5 m it moves the limit from 0 deg to 8 deg.
+const AIM_ASSIST_MAX_DEGREES := 9.0
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -35,6 +54,10 @@ func _ready() -> void:
 	safe_spawn = global_position
 	health = max_health
 	sanity = max_sanity
+	# The camera sits inside the player's own capsule, so an unexcluded sphere
+	# cast collides with the player on frame one and reports a hit that is
+	# never an interactable.
+	aim_assist.add_exception(self)
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED and not _ui_blocking():
@@ -76,6 +99,9 @@ func _unhandled_input(event: InputEvent) -> void:
 			get_viewport().set_input_as_handled()
 
 func _physics_process(delta: float) -> void:
+	var mobile_controls := get_tree().get_first_node_in_group("mobile_controls")
+	var touch_active: bool = mobile_controls != null and bool(mobile_controls.mobile_enabled)
+	touch_aim_assist = touch_active and aim_assist_enabled
 	var sanity_pressure := 1.0 - float(sanity) / float(max_sanity)
 	# The stretch only acts in the corridor and eases in and out, so walking into
 	# a ward during the anomaly does not snap the camera.
@@ -88,8 +114,7 @@ func _physics_process(delta: float) -> void:
 		velocity.y -= gravity * delta
 	if can_move:
 		var input_vec := Input.get_vector("move_left", "move_right", "move_forward", "move_back")
-		var mobile_controls := get_tree().get_first_node_in_group("mobile_controls")
-		if mobile_controls and mobile_controls.mobile_enabled:
+		if touch_active:
 			var touch_input: Vector2 = mobile_controls.movement_vector
 			if touch_input.length_squared() > input_vec.length_squared():
 				input_vec = touch_input
@@ -188,14 +213,65 @@ func _ui_blocking() -> bool:
 	return hud and hud.has_method("is_blocking_gameplay") and hud.is_blocking_gameplay()
 
 func _find_interactable() -> Node:
-	if not ray.is_colliding():
-		return null
-	var node: Node = ray.get_collider()
+	# The exact ray always wins, so mouse aiming is untouched and the assist can
+	# only ever turn a miss into a hit - never redirect a hit somewhere else.
+	var direct := _interactable_above(ray.get_collider() if ray.is_colliding() else null)
+	if direct or not touch_aim_assist:
+		return direct
+	return _assisted_interactable()
+
+func _interactable_above(collider: Object) -> Node:
+	var node := collider as Node
 	while node:
 		if node.has_method("interact"):
 			return node
 		node = node.get_parent()
 	return null
+
+func _assisted_interactable() -> Node:
+	# enabled = false in the scene: this is a manual query run only on the
+	# frames where the exact ray found nothing, not a second sweep every tick.
+	aim_assist.force_shapecast_update()
+	if not aim_assist.is_colliding():
+		return null
+	var origin := camera.global_position
+	var forward := -camera.global_transform.basis.z
+	var best: Node = null
+	var best_angle := deg_to_rad(AIM_ASSIST_MAX_DEGREES)
+	for index in aim_assist.get_collision_count():
+		var candidate := _interactable_above(aim_assist.get_collider(index))
+		if not candidate:
+			continue
+		var point: Vector3 = aim_assist.get_collision_point(index)
+		var offset := point - origin
+		if offset.length_squared() < 0.0001:
+			continue
+		var angle := forward.angle_to(offset)
+		if angle >= best_angle:
+			continue
+		if not _can_see(origin, point, candidate):
+			continue
+		best_angle = angle
+		best = candidate
+	return best
+
+func _can_see(origin: Vector3, point: Vector3, target: Node) -> bool:
+	# Areas must not block: they ARE the interaction volumes, so a query that
+	# collided with them would report every prop as hidden behind itself. Only
+	# solid geometry counts, and the prop's own collision body is not "between".
+	var query := PhysicsRayQueryParameters3D.create(origin, point)
+	query.collision_mask = 1
+	query.collide_with_areas = false
+	query.exclude = [get_rid()]
+	var hit := get_world_3d().direct_space_state.intersect_ray(query)
+	if hit.is_empty():
+		return true
+	var node := hit.get("collider") as Node
+	while node:
+		if node == target:
+			return true
+		node = node.get_parent()
+	return false
 
 func _interact() -> void:
 	var target := _find_interactable()
